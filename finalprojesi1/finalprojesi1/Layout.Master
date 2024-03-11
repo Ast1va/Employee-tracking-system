@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Layout.master.cs" Inherits="finalprojesi1.Layout" %>
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="personeldeneme.aspx">Saat Takip Sistemi</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="ListPersonel.aspx">Anasayfa</a></li>
+                <li><a href="İletişimsayfası.aspx">İletişim</a></li>
+                
+                <li><a href="hakkımızda.aspx">Hakkımızda</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="Register.aspx"><span class="glyphicon glyphicon-user"></span>Kayıt ol</a></li>
+                <li><a href="Login.aspx"><span class="glyphicon glyphicon-log-in"></span>Giriş yap</a></li>
+                <li><a href="Logout.aspx"><span class="glyphicon glyphicon-log-out"></span>Çıkış yap</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        <div class="container">
+
+        </div>
+    </asp:ContentPlaceHolder>
+
+
+</body>
+</html>
